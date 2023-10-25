@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="/dist/output.css" rel="stylesheet">
+  
+  
+  <script src="https://kit.fontawesome.com/ad7640bbdf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- header block -->
+<header class="h-auto">
+  <div>
+
+    <!-- secondary header -->
+    <div class="flex w-full border-b py-3 3xl:py-1">
+
+      <div class="w-full">
+
+
+        <div class=" flex flex-row justify-between   items-center   px-4">
+          <div class="flex flex-row gap-2 lg:gap-1">
+
+            <div class="flex flex-row ">
+
+              <button
+                class="flex items-center justify-center px-2 py-3 text-xs w-auto h-7 lg:h-6 font-medium text-gray-700 bg-transparent border border-gray-400 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i
+                  class="mt-0.5 fa-solid fa-paper-plane"></i></i><p class=" hidden md:block">&nbsp;telegram&nbsp;chat</p></button>
+
+            </div>
+            <div class="flex flex-row ">
+              <p
+                class="hidden items-center justify-center p-2 text-xs w-auto h-6 font-medium text-gray-700 bg-transparent   dark:bg-gray-800  dark:text-gray-400 md:flex">
+                <i class="mt-1 fa-solid fa-envelope"></i>&nbsp;standartbit.office@gmail.com
+              </p>
+
+              <p class="flex items-center justify-center px-2 text-xs w-auto h-7 font-medium text-gray-700 bg-transparent border border-gray-400 rounded-lg md:hidden hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                <a href=""><i class=" fa-solid fa-envelope"></i></a>
+              </p>
+
+
+
+            </div>
+          </div>
+
+          <div class="flex flex-row gap-2 items-center xl:hidden">
+            <svg class="w-5 h-5 text-gray-600  dark:text-white" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12.079 4.839a3 3 0 0 0-4.255.1M11 18h1.083A3.916 3.916 0 0 0 16 14.083V7A6 6 0 1 0 4 7v7m7 4v-1a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1Zm-7-4V8H3a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h1Zm12-6h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1V8Z" />
+            </svg>
+            <span class="font-medium lg:text-sm text-gray-600">Online</span>
+            
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+            </span>
+          </div>
+          
+          <div class="flex flex-row gap-2 items-center">
+            <div class="hidden lg:flex flex-row gap-6">
+              <div class="flex flex-row gap-2 items-center text-sm w-auto font-medium text-gray-700">
+                <p>Welcome, <span class="font-bold">Andrii</span>!&nbsp; Balance:</p>
+                <p id="balance" style="display: block;">&#8727;&#8727;&#8727;&#8727;&#8727;&#8727;</p>
+                <p id="balance-visible" style="display: none;">230.76 USD</p>
+                <button id="show-hide-button"><i class="fa-regular fa-eye-slash"></i></button>
+                <button
+                  class="flex items-center justify-center p-2 text-sm w-auto h-7 font-medium text-gray-700 bg-transparent border border-gray-400 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i
+                    class="fa-solid fa-user"></i>
+                  &nbsp;My Profile</button>
+                <button
+                  class="flex items-center justify-center p-2 text-sm w-auto h-7 font-medium text-gray-700 bg-transparent border border-gray-400 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                  Log Out&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+              </div>
+            </div>
+
+            <button
+              class="flex items-center justify-center p-2 text-xs w-7 h-7 font-medium text-gray-700 bg-transparent border border-gray-400 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><svg
+                class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                viewBox="0 0 18 20">
+                <path
+                  d="M17.8 13.75a1 1 0 0 0-.859-.5A7.488 7.488 0 0 1 10.52 2a1 1 0 0 0 0-.969A1.035 1.035 0 0 0 9.687.5h-.113a9.5 9.5 0 1 0 8.222 14.247 1 1 0 0 0 .004-.997Z">
+                </path>
+              </svg></button>
+
+            <button
+              class="flex items-center justify-center p-2 text-sm w-auto h-7 font-medium text-gray-700 bg-transparent border border-gray-400 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i
+                class="fa-solid fa-globe text-gray-600 dark:text-white"></i>&nbsp;en</button>
+
+              <div class="hidden xl:flex flex-row gap-2">
+                <svg class="w-7 h-7 text-gray-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linejoin="round" stroke-width="2"
+                  d="M10 6v4l3.276 3.276M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <div class="flex flex-col justify-center ">
+  
+                <span class="relative text-xs font-semibold text-gray-500 leading-tight">Monday-Sunday <br> 9:00-23:00
+                  (Kyiv time)</span>
+  
+              </div>
+              </div>
+            
+          </div>
+
+<!-- secondary header END-->
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+<!-- main header -->
+    <div class="flex w-full justify-center">
+      <nav class="w-11/12 pr-1 lg:pr-0 lg:w-10/12  ">
+
+        <div class="flex flex-wrap items-center justify-between py-1 gap-6 md:py-3 md:gap-0 relative">
+          <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav" class="hidden peer">
+          <div class="relative z-20 w-full flex justify-between lg:w-max md:px-0">
+            <div class="flex space-x-8 items-center">
+              <a href="#home" aria-label="logo">
+                <img class="h-12" src="img/logo.png" alt="logo">
+              </a>
+              <div class="flex flex-row gap-2 items-center hidden xl:flex">
+                <svg class="w-5 h-5 text-gray-600  dark:text-white" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12.079 4.839a3 3 0 0 0-4.255.1M11 18h1.083A3.916 3.916 0 0 0 16 14.083V7A6 6 0 1 0 4 7v7m7 4v-1a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1Zm-7-4V8H3a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h1Zm12-6h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1V8Z" />
+                </svg>
+                <span class="font-medium lg:text-sm text-gray-600">Operator is online </span>
+                
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                </span>
+              </div>
+
+
+            </div>
+
+
+            <div class="relative flex items-center lg:hidden max-h-10">
+              <label role="button" for="toggle_nav" aria-label="humburger" id="hamburger" class="relative  p-6 -mr-6">
+                <div aria-hidden="true" id="line"
+                  class="m-auto h-0.5 w-5 rounded bg-sky-900 dark:bg-gray-300 transition duration-300"></div>
+                <div aria-hidden="true" id="line2"
+                  class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 dark:bg-gray-300 transition duration-300"></div>
+              </label>
+            </div>
+          </div>
+          <div aria-hidden="true"
+            class="fixed z-10 inset-0 h-screen w-screen bg-white/70 backdrop-blur-2xl origin-bottom scale-y-0 transition duration-500 peer-checked:origin-top peer-checked:scale-y-100 lg:hidden dark:bg-gray-900/70">
+          </div>
+          <div class="flex-col z-30 flex-wrap gap-6 p-8 rounded-3xl border border-gray-100 bg-white shadow-2xl shadow-gray-600/10 justify-end w-full invisible opacity-0 translate-y-1  absolute top-full left-0 transition-all duration-300 scale-95 origin-top 
+                    lg:relative lg:scale-100 lg:peer-checked:translate-y-0 lg:translate-y-0 lg:flex lg:flex-row lg:items-center lg:gap-0 lg:p-0 lg:bg-transparent lg:w-7/12 lg:visible lg:opacity-100 lg:border-none
+                    peer-checked:scale-100 peer-checked:opacity-100 peer-checked:visible lg:shadow-none 
+                    dark:shadow-none dark:bg-gray-800 dark:border-gray-700">
+
+            <div class="text-gray-600 dark:text-gray-300 lg:pr-4 lg:w-auto w-full lg:pt-0">
+              <ul class="tracking-wide font-medium lg:text-sm flex-col flex lg:flex-row gap-6 lg:gap-0">
+                <li>
+                  <a href="#features" class="block md:px-4 transition hover:text-blue-500">
+                    <span class="flex flex-row flex-nowrap items-center"><i class="fa-solid fa-right-left"></i>&nbsp;Exchange</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#solution" class="block md:px-4 transition hover:text-blue-500">
+                    <span class="flex flex-row flex-nowrap items-center"><i class="fa-solid fa-square-poll-vertical"></i>&nbsp;Exchange&nbsp;Rates</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#testimonials" class="block md:px-4 transition hover:text-blue-500">
+                    <span class="flex flex-row flex-nowrap items-center"><i class="fa-solid fa-money-check-dollar"></i>&nbsp;<span>AML&KYC</span></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#testimonials" class="block md:px-4 transition hover:text-blue-500">
+                    <span class="flex flex-row flex-nowrap items-center"><i class="fa-solid fa-coins"></i>&nbsp;Investments</span>
+                  </a>
+                </li>
+                <li>
+                  <button  id="dropdownAbout" data-dropdown-toggle="dropdown"   class="flex flex-row items-center gap-1  md:pl-4 transition hover:text-blue-500">
+                    <span class="flex flex-row flex-nowrap items-center">About&nbsp;Us&nbsp;</span><i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  
+<!-- Dropdown menu -->
+            <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownAbout">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Item 01</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Item 02</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Item 03</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Item 04</a>
+                </li>
+              </ul>
+            </div>
+
+                </li>
+                
+                <li class="flex lg:hidden flex-col border-t pt-5">
+                  <p>Welcome, <span class="font-bold">Andrii</span>!</p>
+                  <div class="flex flex-row gap-2 mt-2">Balance: 
+                  <p  style="display: block;"><span id="balance-2">&#8727;&#8727;&#8727;&#8727;&#8727;&#8727;</span> </p>
+                  <p id="balance-visible-2" style="display: none;"> 230.76 USD</p>
+                  <button id="show-hide-button-2"><i class="fa-regular fa-eye-slash"></i></button>
+                  </div>
+                  
+                </li>
+                <li >
+                  <div class="flex lg:hidden flex-col gap-6">
+                    <div class="flex flex-row gap-2 items-center text-md w-auto font-medium text-gray-700">
+                      
+                      <button
+                        class="flex items-center justify-center p-2 text-md w-auto h-9 font-medium text-gray-700 bg-transparent border border-gray-400 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i
+                          class="fa-solid fa-user"></i>
+                        &nbsp;My Profile</button>
+                      <button
+                        class="flex items-center justify-center p-2 text-md w-auto h-9 font-medium text-gray-700 bg-transparent border border-gray-400 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                        Log Out&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                    </div>
+                  </div>
+                </li>
+                <li class="mt-3 border-t pt-4">
+                  <div class="flex lg:hidden gap-2">
+                    <svg class="w-7 h-7 text-gray-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linejoin="round" stroke-width="2"
+                  d="M10 6v4l3.276 3.276M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+                    <span class="relative text-xs font-semibold text-gray-500 leading-tight">Monday-Sunday <br> 9:00-23:00
+                      (Kyiv time)</span>
+      
+                  </div>
+                </li>
+              </ul>
+              
+            </div>
+
+            <div class="mt-12 lg:mt-0">
+
+            </div>
+          </div>
+        </div>
+
+      </nav>
+    </div>
+<!-- main header END-->
+
+  </header>
+<!--  header block END-->
+
+<div class="w-full ">
+  <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container text-blue">
+  <div class="w-12 tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "US 100"
+    },
+    {
+      "proName": "FX_IDC:EURUSD",
+      "title": "EUR to USD"
+    },
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "Ethereum"
+    },
+    {
+      "description": "",
+      "proName": "OANDA:USDCAD"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "light",
+  "isTransparent": true,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</div>
+
+  <div class="relative" id="home"> 
+    <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+      <div class="blur-[86px] h-64 bg-gradient-to-br from-rose-200 to-cyan-300 dark:from-blue-700"></div>
+      <div class="blur-[67px] h-64 bg-gradient-to-r from-cyan-400 to-cyan-600 dark:to-indigo-600"></div>
+    </div>
+    
+      
+
+      
+
+      <div id="send-receive-container-2" class="flex flex-col items-center bg-contain justify-center pb-24 pt-12" style="background-image: url('./img/6256458.jpg')">
+        <div
+          class=" w-11/12 sm:w-10/12  dark:divide-gray-700 shadow-xl overflow-visible rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700">
+          <div
+            class="group relative bg-white dark:bg-gray-800 rounded-3xl transition ">
+            <div class="flex flex-col">
+              <div class="w-full flex  justify-center items-center gap-2 border-b py-2 px-4 font-medium text-green-500">
+                <svg class="w-4 h-4 text-green-500 dark:text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10 2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                </svg> <p>New city added for Euro Cash</p>
+              </div>
+              <div class="flex justify-center md:gap-24 flex-wrap py-6 border-b border-gray-100 pb-12">
+                <div class="px-4 mt-6 md:mt-0">
+                  <h2 class="text-3xl mb-6 font-bold text-cyan-600 dark:text-white mx-2">
+                    You send
+                  </h2>
+                  <div class="flex flex-row justify-between items-center  border-2 rounded-lg border-slate-300 dark:bg-gray-800 text-gray-600 dark:text-gray-300 my-4 mx-2 pl-4 pr-1">
+                    <input type="text" class="w-2/3 border-none font-bold outline-none focus:ring-transparent " value="5000">
+                    <div >
+
+                    
+                    <button class="flex flex-row items-center gap-2 bg-gray-200 border-gray-200 rounded-lg justify-around py-1 px-2" id="dropdownChooseSecondType" data-dropdown-toggle="dropdown2" data-dropdown-placement="bottom-end" data-dropdown-delay="500"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-monobuah.png" alt="Monobank UAH"><span>UAH</span><i class="fa-solid fa-chevron-down text-xs mt-1"></i></button>
+                  </div>
+                    
+                    
+                    
+                    <div id="dropdown2" class="hidden bg-white rounded-lg shadow w-content h-full  dark:bg-gray-700" >
+                      <div class="mb-4 border-b border-gray-200 dark:border-gray-700 " >
+                        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                            <li class="mr-2" role="presentation">
+                                <button class="inline-block p-4 border-b-2 rounded-t-lg" id="usd-tab" data-tabs-target="#usd" type="button" role="tab" aria-controls="usd" aria-selected="false">USD</button>
+                            </li>
+                            <li class="mr-2" role="presentation">
+                                <button class="inline-block p-4 border-b-2  rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="uah-tab" data-tabs-target="#uah" type="button" role="tab" aria-controls="uah" aria-selected="false">UAH</button>
+                            </li>
+                            <li class="mr-2" role="presentation">
+                                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="eur-tab" data-tabs-target="#eur" type="button" role="tab" aria-controls="eur" aria-selected="false">EUR</button>
+                            </li>
+                            <li role="presentation">
+                                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="rub-tab" data-tabs-target="#rub" type="button" role="tab" aria-controls="rub" aria-selected="false">RUB</button>
+                            </li>
+                            <li role="presentation">
+                              <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="btc-tab" data-tabs-target="#btc" type="button" role="tab" aria-controls="btc" aria-selected="false">BTC</button>
+                          </li>
+                        </ul>
+                    </div>
+                    <div id="myTabContent">
+                        <div class="hidden p-4 z-50 rounded-lg bg-gray-50 dark:bg-gray-800" id="usd" role="tabpanel" aria-labelledby="usd-tab">
+                          <table >
+                            
+                            <tbody>
+                              <tr>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap items-center gap-1 text-sm bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-cardeur.png" alt="Visa UAH"><span>Mastercard USD</span></span></button>
+                                </td>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap items-center gap-1 text-sm bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-balance.png" alt="Cash UAH"><span>Cash USD</span></span></button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap items-center gap-1 text-sm bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-cardeur.png" alt="Visa UAH"><span>Visa USD</span></span></button>
+                                </td>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap items-center gap-1 text-sm bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-pmusd.png" alt="Cash UAH"><span>Perfect Money USD</span></span></button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap items-center gap-1 text-sm bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-ppusd.png" alt="Paypal"><span>PayPal USD</span></span></button>
+                                </td>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap items-center gap-1 text-sm bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-prusd.png" alt="Cash UAH"><span>Payeer USD</span></span></button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap items-center gap-1 text-sm bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-wiseusd.png" alt="Visa UAH"><span>Wise USD</span></span></button>
+                                </td>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap items-center gap-1 text-sm bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-advcusd.png" alt="Cash UAH"><span>Advanced Cash USD</span></span></button>
+                                </td>
+                              </tr>
+                              
+                              
+                              
+                              
+                          
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="uah" role="tabpanel" aria-labelledby="uah-tab">
+                          <table >
+                            
+                            <tbody>
+                              <tr>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap gap-1 bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-monobuah.png" alt="Monobank UAH"><span>Monobank UAH</span></span></button>
+                                </td>
+
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap gap-1 bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-cardeur.png" alt="Visa UAH"><span>Visa UAH</span></span></button>
+                                </td>
+
+                              </tr>
+                              <tr>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap gap-1 bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-cardeur.png" alt="Visa UAH"><span>Mastercard UAH</span></span></button>
+                                </td>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap gap-1 bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-balance.png" alt="Cash UAH"><span>Cash UAH</span></span></button>
+                                </td>
+                              </tr>
+                             
+                          
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="rub" role="tabpanel" aria-labelledby="rub-tab">
+                          <table >
+                            
+                            <tbody>
+                              <tr>
+                                <td class="py-2 px-4"><button>RUB Dollar <span class="text-green-500">$</span></button></td>
+                                <td class="py-2 px-4">RUB Dollar <span class="text-green-500">$</span></td>
+                              </tr>
+                              <tr>
+                                <td class="py-2 px-4"><button>RUB Dollar <span class="text-green-500">$</span></button></td>
+                                <td class="py-2 px-4">RUB Dollar <span class="text-green-500">$</span></td>
+                              </tr>
+                          
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="btc" role="tabpanel" aria-labelledby="btc-tab">
+                          <table >
+                            
+                            <tbody>
+                              <tr>
+                                <td class="py-2 px-4"><button>BTC Dollar <span class="text-green-500">$</span></button></td>
+                                <td class="py-2 px-4">BTC Dollar <span class="text-green-500">$</span></td>
+                              </tr>
+                              <tr>
+                                <td class="py-2 px-4"><button>BTC Dollar <span class="text-green-500">$</span></button></td>
+                                <td class="py-2 px-4">BTC Dollar <span class="text-green-500">$</span></td>
+                              </tr>
+                          
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="eur" role="tabpanel" aria-labelledby="eur-tab">
+                          <table >
+                            
+                            <tbody>
+                              <tr>
+                                <td class="py-2 px-4"><button>BTCD Dollar <span class="text-green-500">$</span></button></td>
+                                <td class="py-2 px-4">BTC Dollar <span class="text-green-500">$</span></td>
+                              </tr>
+                              <tr>
+                                <td class="py-2 px-4"><button>BTC Dollar <span class="text-green-500">$</span></button></td>
+                                <td class="py-2 px-4">BTC Dollar <span class="text-green-500">$</span></td>
+                              </tr>
+                          
+                            </tbody>
+                          </table>
+                        </div>
+
+                    </div>
+                    </div>
+                  
+                  </div>
+
+                  <div class="ml-2 font-bold text-sm text-gray-600 flex gap-1 flex-nowrap items-center">
+                    <svg class="w-5 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 19 20">
+                      <path d="M18.972.863a.913.913 0 0 0-.041-.207.956.956 0 0 0-.107-.19 1.01 1.01 0 0 0-.065-.116c-.008-.01-.02-.013-.028-.022a1.008 1.008 0 0 0-.174-.137 1.085 1.085 0 0 0-.141-.095 1.051 1.051 0 0 0-.171-.047.985.985 0 0 0-.207-.041C18.025.007 18.014 0 18 0h-3.207a1 1 0 1 0 0 2h.5l-4.552 3.9-3.5-.874a1 1 0 0 0-.867.189l-5 4a1 1 0 0 0 1.25 1.562L7.238 7.09l3.52.88a1 1 0 0 0 .892-.211L17 3.173v1.034a1 1 0 0 0 2 0V1a.9.9 0 0 0-.028-.137ZM13.5 9a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Zm.24 4.591a3.112 3.112 0 0 1 1.935 1.374 2.036 2.036 0 0 1 .234 1.584 2.255 2.255 0 0 1-1.374 1.469.982.982 0 0 1-1.953.09 2.943 2.943 0 0 1-1.475-.92 1 1 0 0 1 1.536-1.283.953.953 0 0 0 .507.29.778.778 0 0 0 .831-.18 1.108 1.108 0 0 0-.714-.481 3.105 3.105 0 0 1-1.934-1.374 2.042 2.042 0 0 1-.233-1.584 2.264 2.264 0 0 1 1.45-1.493v-.03a1 1 0 0 1 2 0c.517.159.98.457 1.337.862a1.002 1.002 0 1 1-1.524 1.3.962.962 0 0 0-.507-.286.775.775 0 0 0-.829.18 1.113 1.113 0 0 0 .713.482ZM6 20a1 1 0 0 1-1-1v-6a1 1 0 1 1 2 0v6a1 1 0 0 1-1 1Zm-4 0a1 1 0 0 1-1-1v-4a1 1 0 1 1 2 0v4a1 1 0 0 1-1 1Z"/>
+                    </svg>
+                  Exchange rate:  
+                  <div class="bg-gray-200 rounded-lg px-1">1 USD = 38.67854 UAH</div></div>
+                  <div
+                    class="flex flex-row justify-between items-center  border rounded-lg dark:bg-gray-800 text-gray-600 dark:text-gray-300 mb-2 mt-6 mx-2 pl-4 pr-1">
+                    <input type="text" class="placeholder-gray-400 border-none font-bold outline-none focus:ring-transparent"
+                      placeholder="Name on the card">
+                  
+                  </div>
+                  <div
+                    class="flex flex-row justify-between items-center  border rounded-lg dark:bg-gray-800 text-gray-600 dark:text-gray-300 my-2 mx-2 pl-4 pr-1">
+                    <input type="text" class="placeholder-gray-400 border-none font-bold outline-none focus:ring-transparent"
+                      placeholder="Card number">
+                  
+                  </div>
+                </div>
+
+                <div class="hidden xl:flex justify-center mt-14 w-auto ">
+                  <svg class="w-9 h-9 text-gray-700 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9 4-4-4-4M1 9l4-4-4-4"/>
+                  </svg>
+                </div>
+                
+                <div class="px-4 mt-12 md:mt-0">
+                  <h2 class="mx-2 mb-6 text-3xl font-bold text-cyan-600 dark:text-white">
+                    You recieve
+                  </h2>
+                  <div class="flex flex-row justify-between items-center  border-2 border-slate-300 rounded-lg dark:bg-gray-800 text-gray-600 dark:text-gray-300 my-4 mx-2 pl-4 pr-1">
+                    <input type="text" class="w-2/3 border-none font-bold outline-none focus:ring-transparent " value="5000">
+                    <div >
+
+                    
+                    <button class="flex flex-row items-center gap-2 bg-gray-200 border-gray-200 rounded-lg justify-around py-1 px-2" id="dropdownChooseSecondType" data-dropdown-toggle="dropdown2" data-dropdown-placement="bottom-end" data-dropdown-delay="500"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-monobuah.png" alt="Monobank UAH"><span>UAH</span><i class="fa-solid fa-chevron-down text-xs mt-1"></i></button>
+                  </div>
+                    
+                    
+                    
+                    <div id="dropdown2" class="hidden bg-white rounded-lg shadow w-content h-full  dark:bg-gray-700" >
+                      <div class="mb-4 border-b border-gray-200 dark:border-gray-700 " >
+                        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                            <li class="mr-2" role="presentation">
+                                <button class="inline-block p-4 border-b-2 rounded-t-lg" id="usd-tab" data-tabs-target="#usd" type="button" role="tab" aria-controls="usd" aria-selected="false">USD</button>
+                            </li>
+                            <li class="mr-2" role="presentation">
+                                <button class="inline-block p-4 border-b-2  rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="uah-tab" data-tabs-target="#uah" type="button" role="tab" aria-controls="uah" aria-selected="false">UAH</button>
+                            </li>
+                            <li class="mr-2" role="presentation">
+                                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="eur-tab" data-tabs-target="#eur" type="button" role="tab" aria-controls="eur" aria-selected="false">EUR</button>
+                            </li>
+                            <li role="presentation">
+                                <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="rub-tab" data-tabs-target="#rub" type="button" role="tab" aria-controls="rub" aria-selected="false">RUB</button>
+                            </li>
+                            <li role="presentation">
+                              <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="btc-tab" data-tabs-target="#btc" type="button" role="tab" aria-controls="btc" aria-selected="false">BTC</button>
+                          </li>
+                        </ul>
+                    </div>
+                    <div id="myTabContent">
+                        <div class="hidden p-4 z-50 rounded-lg bg-gray-50 dark:bg-gray-800" id="usd" role="tabpanel" aria-labelledby="usd-tab">
+                          <table >
+                            
+                            <tbody>
+                              <tr>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap items-center gap-1 text-sm bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-cardeur.png" alt="Visa UAH"><span>Mastercard USD</span></span></button>
+                                </td>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap items-center gap-1 text-sm bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-balance.png" alt="Cash UAH"><span>Cash USD</span></span></button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap items-center gap-1 text-sm bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-cardeur.png" alt="Visa UAH"><span>Visa USD</span></span></button>
+                                </td>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap items-center gap-1 text-sm bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-pmusd.png" alt="Cash UAH"><span>Perfect Money USD</span></span></button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap items-center gap-1 text-sm bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-ppusd.png" alt="Paypal"><span>PayPal USD</span></span></button>
+                                </td>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap items-center gap-1 text-sm bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-prusd.png" alt="Cash UAH"><span>Payeer USD</span></span></button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap items-center gap-1 text-sm bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-wiseusd.png" alt="Visa UAH"><span>Wise USD</span></span></button>
+                                </td>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap items-center gap-1 text-sm bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-advcusd.png" alt="Cash UAH"><span>Advanced Cash USD</span></span></button>
+                                </td>
+                              </tr>
+                              
+                              
+                              
+                              
+                          
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="uah" role="tabpanel" aria-labelledby="uah-tab">
+                          <table >
+                            
+                            <tbody>
+                              <tr>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap gap-1 bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-monobuah.png" alt="Monobank UAH"><span>Monobank UAH</span></span></button>
+                                </td>
+
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap gap-1 bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-cardeur.png" alt="Visa UAH"><span>Visa UAH</span></span></button>
+                                </td>
+
+                              </tr>
+                              <tr>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap gap-1 bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-cardeur.png" alt="Visa UAH"><span>Mastercard UAH</span></span></button>
+                                </td>
+                                <td class="py-1 px-2">
+                                  <button class="flex flex-nowrap gap-1 bg-white p-2 rounded-full hover:bg-gray-200"><img class="w-6 h-6" src="https://standartbit.com/site-default/icon-balance.png" alt="Cash UAH"><span>Cash UAH</span></span></button>
+                                </td>
+                              </tr>
+                             
+                          
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="rub" role="tabpanel" aria-labelledby="rub-tab">
+                          <table >
+                            
+                            <tbody>
+                              <tr>
+                                <td class="py-2 px-4"><button>RUB Dollar <span class="text-green-500">$</span></button></td>
+                                <td class="py-2 px-4">RUB Dollar <span class="text-green-500">$</span></td>
+                              </tr>
+                              <tr>
+                                <td class="py-2 px-4"><button>RUB Dollar <span class="text-green-500">$</span></button></td>
+                                <td class="py-2 px-4">RUB Dollar <span class="text-green-500">$</span></td>
+                              </tr>
+                          
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="btc" role="tabpanel" aria-labelledby="btc-tab">
+                          <table >
+                            
+                            <tbody>
+                              <tr>
+                                <td class="py-2 px-4"><button>BTC Dollar <span class="text-green-500">$</span></button></td>
+                                <td class="py-2 px-4">BTC Dollar <span class="text-green-500">$</span></td>
+                              </tr>
+                              <tr>
+                                <td class="py-2 px-4"><button>BTC Dollar <span class="text-green-500">$</span></button></td>
+                                <td class="py-2 px-4">BTC Dollar <span class="text-green-500">$</span></td>
+                              </tr>
+                          
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="eur" role="tabpanel" aria-labelledby="eur-tab">
+                          <table >
+                            
+                            <tbody>
+                              <tr>
+                                <td class="py-2 px-4"><button>BTCD Dollar <span class="text-green-500">$</span></button></td>
+                                <td class="py-2 px-4">BTC Dollar <span class="text-green-500">$</span></td>
+                              </tr>
+                              <tr>
+                                <td class="py-2 px-4"><button>BTC Dollar <span class="text-green-500">$</span></button></td>
+                                <td class="py-2 px-4">BTC Dollar <span class="text-green-500">$</span></td>
+                              </tr>
+                          
+                            </tbody>
+                          </table>
+                        </div>
+
+                    </div>
+                    </div>
+                  
+                  </div>
+                  
+                  <div class="ml-2 text-sm font-bold text-gray-600 flex gap-1 flex-nowrap items-center"><svg class="w-5 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 13 6-6m-5-.5h.01m2.98 7H11m1.007-11.313a2.75 2.75 0 0 0 2.1.87 2.745 2.745 0 0 1 2.837 2.837 2.749 2.749 0 0 0 .87 2.1 2.747 2.747 0 0 1 0 4.014 2.748 2.748 0 0 0-.87 2.1 2.746 2.746 0 0 1-2.837 2.837 2.75 2.75 0 0 0-2.1.87 2.748 2.748 0 0 1-4.014 0 2.75 2.75 0 0 0-2.1-.87 2.744 2.744 0 0 1-2.837-2.837 2.749 2.749 0 0 0-.87-2.1 2.747 2.747 0 0 1 0-4.014 2.75 2.75 0 0 0 .87-2.1 2.745 2.745 0 0 1 2.838-2.837 2.749 2.749 0 0 0 2.1-.87 2.748 2.748 0 0 1 4.013 0Z"/>
+                  </svg>Discount: <div class="bg-gray-200 rounded-lg px-1">0%</div> <a class="flex items-center ml-1" href=""><svg class="w-5 h-5 text-gray-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.529 7.988a2.502 2.502 0 0 1 5 .191A2.441 2.441 0 0 1 10 10.582V12m-.01 3.008H10M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                  </svg></a></div>
+                  <div
+                    class="flex flex-row justify-between items-center  border rounded-lg dark:bg-gray-800 text-gray-600 dark:text-gray-300 mb-2 mt-6 mx-2 pl-4 pr-1">
+                    <input type="text" class="placeholder-gray-400 border-none font-bold outline-none focus:ring-transparent"
+                      placeholder="Name on the card">
+                  
+                  </div>
+                  <div
+                    class="flex flex-row justify-between items-center  border rounded-lg dark:bg-gray-800 text-gray-600 dark:text-gray-300 my-2 mx-2 pl-4 pr-1">
+                    <input type="text" class="placeholder-gray-400 border-none font-bold outline-none focus:ring-transparent"
+                      placeholder="Card number">
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-wrap items-center gap-1 px-4 pt-6 justify-center">
+                <div
+                class="flex flex-row justify-between items-center mb-2  border rounded-lg dark:bg-gray-800 text-gray-600 dark:text-gray-300 ">
+                <input type="text" class="mx-2 placeholder-gray-400 border-none font-bold outline-none focus:ring-transparent "
+                  placeholder="Email">
+                  
+              
+              </div>
+              <div
+                class="flex flex-row justify-between items-center mb-2  border rounded-lg dark:bg-gray-800 text-gray-600 dark:text-gray-300">
+                <input type="text" class="mx-2 placeholder-gray-400 border-none font-bold outline-none focus:ring-transparent "
+                  placeholder="Promo code">
+                  
+              
+              </div>
+              
+              </div>
+              
+              <div class="flex flex-col flex-nowrap items-center justify-center pb-12">
+                <a href="" class="mb-3 text-md font-medium text-green-400 underline dark:text-blue-500 hover:text-sky-400">How to get promo code?</a>
+                <div class="flex items-center justify-center mx-6">
+                  <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-sky-400 text-center bg-gray-100 border-gray-300 rounded focus:ring-sky-400 dark:focus:ring-sky-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                  <label for="link-checkbox" class="ml-2 text-md font-medium text-gray-700 dark:text-gray-300">I agree with the <a href="#" class="text-sky-400 dark:text-sky-500 hover:underline">AML policy</a> and <a href="" class="text-sky-400 dark:text-sky-500 hover:underline">terms and conditions</a></label>
+              </div>
+                <button class="flex items-center justify-center md:w-1/2 px-5 py-4 text-white mb-2 mt-4 text-md font-semibold text-gray-900 rounded-lg  bg-gradient-to-br from-cyan-500 to-blue-500 hover:from-cyan-500 hover:to-blue-400 focus:ring-4 focus:outline-none ">
+                      Go to payment
+                </button>
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+
+
+
+
+<!-- Features  section --> 
+
+      <div id="features" class=" flex flex-col items-center justify-center mt-24">
+
+        <div class="md:w-2/3 lg:w-1/2">
+
+
+          <h2 class="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+            A technology-first approach to payments
+            and finance
+          </h2>
+          
+        </div>
+        <div
+          class="mt-6 shadow-xl w-10/12 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
+          <div
+            class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+            <div class="relative space-y-8 py-12 p-8">
+              <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" class="w-12" width="512" height="512"
+                alt="burger illustration" />
+
+              <div class="space-y-2">
+                <h5 class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                  Safe exchange
+                </h5>
+                <p class="text-gray-600 dark:text-gray-300">
+                  Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div
+            class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+            <div class="relative space-y-8 py-12 p-8">
+              <img src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png" class="w-12" width="512" height="512"
+                alt="burger illustration" />
+
+              <div class="space-y-2">
+                <h5 class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                  Favorable exchange rate
+                </h5>
+                <p class="text-gray-600 dark:text-gray-300">
+                  Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div
+            class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+            <div class="relative space-y-8 py-12 p-8">
+              <img src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png" class="w-12" width="512" height="512"
+                alt="burger illustration" />
+
+              <div class="space-y-2">
+                <h5 class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                  Investment program
+                </h5>
+                <p class="text-gray-600 dark:text-gray-300">
+                  Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                </p>
+              </div>
+
+            </div>
+          </div>
+          
+          
+          <div
+            class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+            <div
+              class="relative space-y-8 py-12 p-8 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800">
+              <img src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png" class="w-12" width="512" height="512"
+                alt="burger illustration" />
+
+              <div class="space-y-2">
+                <h5 class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                  Accepting payments for your website
+                </h5>
+                <p class="text-gray-600 dark:text-gray-300">
+                  Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+
+<!-- Features  section END--> 
+
+<!-- Telegram promo section -->
+
+      <!-- <div class="flex justify-center px-12">
+        <div class="flex justify-center w-10/12 ">
+          <div
+            class="space-y-6 justify-between text-gray-600 md:flex flex-row-reverse md:gap-6 md:space-y-0 lg:gap-12 lg:items-center">
+            <div class="md:5/12 lg:w-1/2">
+              <img src="https://img.freepik.com/premium-vector/currency-exchange_272892-171.jpg?w=826" alt="image"
+                loading="lazy" width="" height="" class="w-full -z-50" />
+            </div>
+            <div class="md:7/12 lg:w-1/2">
+              <h2 class="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
+                Try same exchange in Telegram
+              </h2>
+              <p class="my-8 text-gray-600 dark:text-gray-300">
+                Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at?
+                Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia. <br>
+              </p>
+              <div class="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
+                <div class="mt-8 flex gap-4 md:items-center">
+                  <div class="w-12 h-12 flex gap-4 rounded-full bg-indigo-100 dark:bg-indigo-900/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="w-6 h-6 m-auto text-indigo-500 dark:text-indigo-400">
+                      <path fill-rule="evenodd"
+                        d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="w-5/6">
+                    <h4 class="font-semibold text-lg text-gray-700 dark:text-indigo-300">Chat Anytime</h3>
+                      <p class="text-gray-500 dark:text-gray-400">Asperiores nemo possimus nesciunt quam mollitia.</p>
+                  </div>
+                </div>
+                <div class="pt-4 flex gap-4 md:items-center">
+                  <div class="w-12 h-12 flex gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                      class="w-6 h-6 m-auto text-teal-600 dark:text-teal-400">
+                      <path fill-rule="evenodd"
+                        d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <div class="w-5/6">
+                    <h4 class="font-semibold text-lg text-gray-700 dark:text-teal-300">Real Time Location</h3>
+                      <p class="text-gray-500 dark:text-gray-400">Asperiores nemo possimus nesciunt quam mollitia.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+<!-- Telegram promo section END-->  
+
+<!-- News and Last transactions --> 
+
+<div class="relative flex flex-col items-center justify-center mt-32">
+  <div aria-hidden="true" class="absolute -z-50 inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+    <div class="blur-[86px] h-54 bg-gradient-to-br from-rose-200 to-cyan-300 dark:from-blue-700"></div>
+    <div class="blur-[112px] h-64 bg-gradient-to-r from-cyan-400 to-cyan-600 dark:to-indigo-600"></div>
+  </div>
+  <h2 class="mb-8 text-center text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+    Latest news and transactions
+  </h2>
+  <div class="flex flex-row flex-wrap items-center justify-around gap-4 mt-6 w-10/12">
+    <div class="flex flex-col items-center justify-around w-full 2xl:w-1/2">
+      
+      <div class="w-full p-2 ">
+        <div class="shadow-xl bg-white border border-gray-100 rounded-2xl p-2 ">
+          <div
+      class="block text-left dark:bg-neutral-700">
+      <div class="p-6">
+        <h5
+          class="mb-1 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+          Special title treatment
+        </h5>
+        <h6
+          class="mb-2 text-base font-medium leading-tight text-neutral-500 dark:text-neutral-50">
+          Card subtitle
+        </h6>
+        <p
+          class="mb-4 text-base  leading-normal text-neutral-600 dark:text-neutral-200">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a
+          type="button"
+          href="#"
+          class="pointer-events-auto mr-5 inline-block cursor-pointer rounded text-base font-normal leading-normal text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700">
+          Card Link
+        </a>
+        <a
+          type="button"
+          href="#"
+          class="pointer-events-auto inline-block cursor-pointer rounded text-base font-normal leading-normal text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700">
+          Another Link
+        </a>
+      </div>
+    </div>
+        </div>
+      </div>
+      <div class="w-full p-2 ">
+        <div class="shadow-xl bg-white border border-gray-100 rounded-2xl p-2 ">
+          <div
+      class="block text-left dark:bg-neutral-700">
+      <div class="p-6">
+        <h5
+          class="mb-1 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+          Special title treatment
+        </h5>
+        <h6
+          class="mb-2 text-base font-medium leading-tight text-neutral-500 dark:text-neutral-50">
+          Card subtitle
+        </h6>
+        <p
+          class="mb-4 text-base  leading-normal text-neutral-600 dark:text-neutral-200">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a
+          type="button"
+          href="#"
+          class="pointer-events-auto mr-5 inline-block cursor-pointer rounded text-base font-normal leading-normal text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700">
+          Card Link
+        </a>
+        <a
+          type="button"
+          href="#"
+          class="pointer-events-auto inline-block cursor-pointer rounded text-base font-normal leading-normal text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700">
+          Another Link
+        </a>
+      </div>
+    </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="w-full 2xl:w-auto">
+      
+      <div class="py-2  border border-gray-100 bg-white shadow-xl rounded-2xl">
+        
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+          <thead class="text-xl text-gray-600  bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+              
+              
+    
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th scope="row"
+                class="hidden sm:flex flex-row gap-2 items-center px-12 py-4 font-medium text-gray-500 whitespace-nowrap dark:text-white">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path fill="currentColor"
+                    d="M6 1a1 1 0 0 0-2 0h2ZM4 4a1 1 0 0 0 2 0H4Zm7-3a1 1 0 1 0-2 0h2ZM9 4a1 1 0 1 0 2 0H9Zm7-3a1 1 0 1 0-2 0h2Zm-2 3a1 1 0 1 0 2 0h-2ZM1 6a1 1 0 0 0 0 2V6Zm18 2a1 1 0 1 0 0-2v2ZM5 11v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 11v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 15v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 15v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 11v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM5 15v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM2 4h16V2H2v2Zm16 0h2a2 2 0 0 0-2-2v2Zm0 0v14h2V4h-2Zm0 14v2a2 2 0 0 0 2-2h-2Zm0 0H2v2h16v-2ZM2 18H0a2 2 0 0 0 2 2v-2Zm0 0V4H0v14h2ZM2 4V2a2 2 0 0 0-2 2h2Zm2-3v3h2V1H4Zm5 0v3h2V1H9Zm5 0v3h2V1h-2ZM1 8h18V6H1v2Zm3 3v.01h2V11H4Zm1 1.01h.01v-2H5v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H5v2h.01v-2ZM9 11v.01h2V11H9Zm1 1.01h.01v-2H10v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM9 15v.01h2V15H9Zm1 1.01h.01v-2H10v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM14 15v.01h2V15h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM14 11v.01h2V11h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM4 15v.01h2V15H4Zm1 1.01h.01v-2H5v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H5v2h.01v-2Z" />
+                </svg>
+                08.08.2023, 18:08
+              </th>
+              <td class="px-7 sm:px-12 py-4">
+                <div class="flex flex-row flex-nowrap gap-2 items-center">
+                  <img class="w-5 h-5" src="https://standartbit.com/site-default/icon-trx.png" alt="TRON">
+                  <svg class="w-4 h-4 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 12 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m7 9 4-4-4-4M1 9l4-4-4-4" />
+                  </svg>
+                  <img class="w-5 h-5" src="https://standartbit.com/site-default/icon-balance.png" alt="Balance USD">
+                  <p class="font-bold">505.15 USD</p>
+                </div>
+    
+              </td>
+    
+              <td class="px-4 py-4 flex justify-center">
+                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><svg class="w-4 h-5 "
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+                  </svg></a>
+              </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th scope="row"
+                class="hidden sm:flex flex-row gap-2 items-center px-12 py-4 font-medium text-gray-500 whitespace-nowrap dark:text-white">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path fill="currentColor"
+                    d="M6 1a1 1 0 0 0-2 0h2ZM4 4a1 1 0 0 0 2 0H4Zm7-3a1 1 0 1 0-2 0h2ZM9 4a1 1 0 1 0 2 0H9Zm7-3a1 1 0 1 0-2 0h2Zm-2 3a1 1 0 1 0 2 0h-2ZM1 6a1 1 0 0 0 0 2V6Zm18 2a1 1 0 1 0 0-2v2ZM5 11v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 11v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 15v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 15v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 11v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM5 15v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM2 4h16V2H2v2Zm16 0h2a2 2 0 0 0-2-2v2Zm0 0v14h2V4h-2Zm0 14v2a2 2 0 0 0 2-2h-2Zm0 0H2v2h16v-2ZM2 18H0a2 2 0 0 0 2 2v-2Zm0 0V4H0v14h2ZM2 4V2a2 2 0 0 0-2 2h2Zm2-3v3h2V1H4Zm5 0v3h2V1H9Zm5 0v3h2V1h-2ZM1 8h18V6H1v2Zm3 3v.01h2V11H4Zm1 1.01h.01v-2H5v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H5v2h.01v-2ZM9 11v.01h2V11H9Zm1 1.01h.01v-2H10v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM9 15v.01h2V15H9Zm1 1.01h.01v-2H10v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM14 15v.01h2V15h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM14 11v.01h2V11h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM4 15v.01h2V15H4Zm1 1.01h.01v-2H5v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H5v2h.01v-2Z" />
+                </svg>
+                08.08.2023, 18:08
+              </th>
+              <td class="px-7 sm:px-12 py-4">
+                <div class="flex flex-row flex-nowrap gap-2 items-center">
+                  <img class="w-5 h-5" src="https://standartbit.com/site-default/icon-trx.png" alt="TRON">
+                  <svg class="w-4 h-4 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 12 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m7 9 4-4-4-4M1 9l4-4-4-4" />
+                  </svg>
+                  <img class="w-5 h-5" src="https://standartbit.com/site-default/icon-balance.png" alt="Balance USD">
+                  <p class="font-bold">505.15 USD</p>
+                </div>
+    
+              </td>
+    
+              <td class="px-4 py-4 flex justify-center">
+                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><svg class="w-4 h-5 "
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+                  </svg></a>
+              </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th scope="row"
+                class="hidden sm:flex flex-row gap-2 items-center px-12 py-4 font-medium text-gray-500 whitespace-nowrap dark:text-white">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path fill="currentColor"
+                    d="M6 1a1 1 0 0 0-2 0h2ZM4 4a1 1 0 0 0 2 0H4Zm7-3a1 1 0 1 0-2 0h2ZM9 4a1 1 0 1 0 2 0H9Zm7-3a1 1 0 1 0-2 0h2Zm-2 3a1 1 0 1 0 2 0h-2ZM1 6a1 1 0 0 0 0 2V6Zm18 2a1 1 0 1 0 0-2v2ZM5 11v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 11v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 15v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 15v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 11v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM5 15v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM2 4h16V2H2v2Zm16 0h2a2 2 0 0 0-2-2v2Zm0 0v14h2V4h-2Zm0 14v2a2 2 0 0 0 2-2h-2Zm0 0H2v2h16v-2ZM2 18H0a2 2 0 0 0 2 2v-2Zm0 0V4H0v14h2ZM2 4V2a2 2 0 0 0-2 2h2Zm2-3v3h2V1H4Zm5 0v3h2V1H9Zm5 0v3h2V1h-2ZM1 8h18V6H1v2Zm3 3v.01h2V11H4Zm1 1.01h.01v-2H5v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H5v2h.01v-2ZM9 11v.01h2V11H9Zm1 1.01h.01v-2H10v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM9 15v.01h2V15H9Zm1 1.01h.01v-2H10v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM14 15v.01h2V15h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM14 11v.01h2V11h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM4 15v.01h2V15H4Zm1 1.01h.01v-2H5v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H5v2h.01v-2Z" />
+                </svg>
+                08.08.2023, 18:08
+              </th>
+              <td class="px-7 sm:px-12 py-4">
+                <div class="flex flex-row flex-nowrap gap-2 items-center">
+                  <img class="w-5 h-5" src="https://standartbit.com/site-default/icon-trx.png" alt="TRON">
+                  <svg class="w-4 h-4 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 12 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m7 9 4-4-4-4M1 9l4-4-4-4" />
+                  </svg>
+                  <img class="w-5 h-5" src="https://standartbit.com/site-default/icon-balance.png" alt="Balance USD">
+                  <p class="font-bold">505.15 USD</p>
+                </div>
+    
+              </td>
+    
+              <td class="px-4 py-4 flex justify-center">
+                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><svg class="w-4 h-5 "
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+                  </svg></a>
+              </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th scope="row"
+                class="hidden sm:flex flex-row gap-2 items-center px-12 py-4 font-medium text-gray-500 whitespace-nowrap dark:text-white">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path fill="currentColor"
+                    d="M6 1a1 1 0 0 0-2 0h2ZM4 4a1 1 0 0 0 2 0H4Zm7-3a1 1 0 1 0-2 0h2ZM9 4a1 1 0 1 0 2 0H9Zm7-3a1 1 0 1 0-2 0h2Zm-2 3a1 1 0 1 0 2 0h-2ZM1 6a1 1 0 0 0 0 2V6Zm18 2a1 1 0 1 0 0-2v2ZM5 11v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 11v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 15v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 15v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 11v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM5 15v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM2 4h16V2H2v2Zm16 0h2a2 2 0 0 0-2-2v2Zm0 0v14h2V4h-2Zm0 14v2a2 2 0 0 0 2-2h-2Zm0 0H2v2h16v-2ZM2 18H0a2 2 0 0 0 2 2v-2Zm0 0V4H0v14h2ZM2 4V2a2 2 0 0 0-2 2h2Zm2-3v3h2V1H4Zm5 0v3h2V1H9Zm5 0v3h2V1h-2ZM1 8h18V6H1v2Zm3 3v.01h2V11H4Zm1 1.01h.01v-2H5v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H5v2h.01v-2ZM9 11v.01h2V11H9Zm1 1.01h.01v-2H10v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM9 15v.01h2V15H9Zm1 1.01h.01v-2H10v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM14 15v.01h2V15h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM14 11v.01h2V11h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM4 15v.01h2V15H4Zm1 1.01h.01v-2H5v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H5v2h.01v-2Z" />
+                </svg>
+                08.08.2023, 18:08
+              </th>
+              <td class="px-7 sm:px-12 py-4">
+                <div class="flex flex-row flex-nowrap gap-2 items-center">
+                  <img class="w-5 h-5" src="https://standartbit.com/site-default/icon-trx.png" alt="TRON">
+                  <svg class="w-4 h-4 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 12 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m7 9 4-4-4-4M1 9l4-4-4-4" />
+                  </svg>
+                  <img class="w-5 h-5" src="https://standartbit.com/site-default/icon-balance.png" alt="Balance USD">
+                  <p class="font-bold">505.15 USD</p>
+                </div>
+    
+              </td>
+    
+              <td class="px-4 py-4 flex justify-center">
+                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><svg class="w-4 h-5 "
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+                  </svg></a>
+              </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th scope="row"
+                class="hidden sm:flex flex-row gap-2 items-center px-12 py-4 font-medium text-gray-500 whitespace-nowrap dark:text-white">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path fill="currentColor"
+                    d="M6 1a1 1 0 0 0-2 0h2ZM4 4a1 1 0 0 0 2 0H4Zm7-3a1 1 0 1 0-2 0h2ZM9 4a1 1 0 1 0 2 0H9Zm7-3a1 1 0 1 0-2 0h2Zm-2 3a1 1 0 1 0 2 0h-2ZM1 6a1 1 0 0 0 0 2V6Zm18 2a1 1 0 1 0 0-2v2ZM5 11v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 11v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 15v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 15v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 11v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM5 15v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM2 4h16V2H2v2Zm16 0h2a2 2 0 0 0-2-2v2Zm0 0v14h2V4h-2Zm0 14v2a2 2 0 0 0 2-2h-2Zm0 0H2v2h16v-2ZM2 18H0a2 2 0 0 0 2 2v-2Zm0 0V4H0v14h2ZM2 4V2a2 2 0 0 0-2 2h2Zm2-3v3h2V1H4Zm5 0v3h2V1H9Zm5 0v3h2V1h-2ZM1 8h18V6H1v2Zm3 3v.01h2V11H4Zm1 1.01h.01v-2H5v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H5v2h.01v-2ZM9 11v.01h2V11H9Zm1 1.01h.01v-2H10v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM9 15v.01h2V15H9Zm1 1.01h.01v-2H10v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM14 15v.01h2V15h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM14 11v.01h2V11h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM4 15v.01h2V15H4Zm1 1.01h.01v-2H5v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H5v2h.01v-2Z" />
+                </svg>
+                08.08.2023, 18:08
+              </th>
+              <td class="px-7 sm:px-12 py-4">
+                <div class="flex flex-row flex-nowrap gap-2 items-center">
+                  <img class="w-5 h-5" src="https://standartbit.com/site-default/icon-trx.png" alt="TRON">
+                  <svg class="w-4 h-4 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 12 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m7 9 4-4-4-4M1 9l4-4-4-4" />
+                  </svg>
+                  <img class="w-5 h-5" src="https://standartbit.com/site-default/icon-balance.png" alt="Balance USD">
+                  <p class="font-bold">505.15 USD</p>
+                </div>
+    
+              </td>
+    
+              <td class="px-4 py-4 flex justify-center">
+                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><svg class="w-4 h-5 "
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+                  </svg></a>
+              </td>
+            </tr>
+            <tr class="bg-white  dark:bg-gray-800 ">
+              <th scope="row"
+                class="hidden sm:flex flex-row gap-2 items-center px-12 py-4 font-medium text-gray-500 whitespace-nowrap dark:text-white">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path fill="currentColor"
+                    d="M6 1a1 1 0 0 0-2 0h2ZM4 4a1 1 0 0 0 2 0H4Zm7-3a1 1 0 1 0-2 0h2ZM9 4a1 1 0 1 0 2 0H9Zm7-3a1 1 0 1 0-2 0h2Zm-2 3a1 1 0 1 0 2 0h-2ZM1 6a1 1 0 0 0 0 2V6Zm18 2a1 1 0 1 0 0-2v2ZM5 11v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 11v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM10 15v-1H9v1h1Zm0 .01H9v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 15v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM15 11v-1h-1v1h1Zm0 .01h-1v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM5 15v-1H4v1h1Zm0 .01H4v1h1v-1Zm.01 0v1h1v-1h-1Zm0-.01h1v-1h-1v1ZM2 4h16V2H2v2Zm16 0h2a2 2 0 0 0-2-2v2Zm0 0v14h2V4h-2Zm0 14v2a2 2 0 0 0 2-2h-2Zm0 0H2v2h16v-2ZM2 18H0a2 2 0 0 0 2 2v-2Zm0 0V4H0v14h2ZM2 4V2a2 2 0 0 0-2 2h2Zm2-3v3h2V1H4Zm5 0v3h2V1H9Zm5 0v3h2V1h-2ZM1 8h18V6H1v2Zm3 3v.01h2V11H4Zm1 1.01h.01v-2H5v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H5v2h.01v-2ZM9 11v.01h2V11H9Zm1 1.01h.01v-2H10v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM9 15v.01h2V15H9Zm1 1.01h.01v-2H10v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H10v2h.01v-2ZM14 15v.01h2V15h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM14 11v.01h2V11h-2Zm1 1.01h.01v-2H15v2Zm1.01-1V11h-2v.01h2Zm-1-1.01H15v2h.01v-2ZM4 15v.01h2V15H4Zm1 1.01h.01v-2H5v2Zm1.01-1V15h-2v.01h2Zm-1-1.01H5v2h.01v-2Z" />
+                </svg>
+                08.08.2023, 18:08
+              </th>
+              <td class="px-7 sm:px-12 py-4">
+                <div class="flex flex-row flex-nowrap gap-2 items-center">
+                  <img class="w-5 h-5" src="https://standartbit.com/site-default/icon-trx.png" alt="TRON">
+                  <svg class="w-4 h-4 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 12 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m7 9 4-4-4-4M1 9l4-4-4-4" />
+                  </svg>
+                  <img class="w-5 h-5" src="https://standartbit.com/site-default/icon-balance.png" alt="Balance USD">
+                  <p class="font-bold">505.15 USD</p>
+                </div>
+    
+              </td>
+    
+              <td class="px-4 py-4 flex justify-center">
+                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><svg class="w-4 h-5 "
+                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+                  </svg></a>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+<!-- News and Last transactions END--> 
+
+
+      <div class="flex flex-col justify-center items-center mt-32 dark:text-gray-300" id="testimonials">
+
+        <div class="mb-20 space-y-4 px-6 md:px-0">
+          <h2 class="text-center text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
+            Our reviews
+          </h2>
+        </div>
+        <div class="w-10/12 md:columns-2 lg:columns-3 gap-8 space-y-8">
+          <div
+            class="aspect-auto p-8 border border-gray-200 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4">
+
+              <div>
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Daniella Doe</h6>
+                <p class="text-sm text-gray-300 dark:text-gray-300">07 Jan 2023</p>
+              </div>
+            </div>
+            <p class="mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid quo eum quae quos
+              illo earum ipsa doloribus nostrum minus</p>
+          </div>
+          <div
+            class="aspect-auto p-8 border border-gray-200 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4">
+
+              <div>
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Jane doe</h6>
+                <p class="text-sm text-gray-300 dark:text-gray-300">22 Aug 2023</p>
+              </div>
+            </div>
+            <p class="mt-8"> Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis tempore
+              cupiditate. Sint libero voluptas.</p>
+          </div>
+          <div
+            class="aspect-auto p-8 border border-gray-200 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4">
+
+              <div>
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Yanick Doe</h6>
+                <p class="text-sm text-gray-300 dark:text-gray-300">28 Aug 2023</p>
+              </div>
+            </div>
+            <p class="mt-8">Lorem ipsum dolor sit amet consectetur. Sint libero voluptas veniam at reprehenderit,
+              veritatis harum et rerum.</p>
+          </div>
+          <div
+            class="aspect-auto p-8 border border-gray-200 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4">
+
+              <div>
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Jane Doe</h6>
+                <p class="text-sm text-gray-300 dark:text-gray-300">13 Sep 2023</p>
+              </div>
+            </div>
+
+            <p class="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti
+              aperiam ab veniam sint non cumque quis tempore cupiditate.</p>
+          </div>
+          <div
+            class="aspect-auto p-8 border border-gray-200 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4">
+
+              <div>
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Andy Doe</h6>
+                <p class="text-sm text-gray-300 dark:text-gray-300">10 Jun 2023</p>
+              </div>
+            </div>
+            <p class="mt-8"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam, veritatis
+              harum et rerum.</p>
+          </div>
+          <div
+            class="aspect-auto p-8 border border-gray-200 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4">
+
+              <div>
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Yanndy Doe</h6>
+                <p class="text-sm text-gray-300 dark:text-gray-300">22 Aug 2023</p>
+              </div>
+            </div>
+            <p class="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti
+              aperiam ab veniam sint non .</p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      
+
+<!-- reserves section -->
+
+      <div x-data="{ open: false }" class="pt-24 pb-12 flex flex-col  items-center justify-center relative overflow-hidden ">
+        <div  @click="open = ! open" class="px-8 py-6 bg-slate-100 w-10/12 h-auto rounded-2xl  shadow-xl flex flex-col sm:flex-row justify-between items-center h-24">
+          <div class="flex items-center gap-2">
+              
+              <h4 class="font-bold text-2xl text-gray-500">Reserves</h4>
+          </div>
+          <button id="reserve"  class="mt-2 text-sm px-5 py-2.5 sm:mr-2 mb-2 text-white mb-2 mt-4 text-md font-semibold text-gray-900 rounded-lg  bg-gradient-to-br from-cyan-500 to-blue-500 hover:from-cyan-500 hover:to-blue-400 focus:ring-2 focus:outline-none ">Show reserves <i class="fa-solid fa-chevron-down text-xs mt-1"></i></button>
+        </div>
+        <div x-show="open" @click.outside="open = false"  x-transition:enter="transition ease-out duration-300"
+              x-transition:enter-start="opacity-0 translate-y-0"
+              x-transition:enter-end="opacity-100 translate-y-0"
+              x-transition:leave="transition ease-in duration-300"
+              x-transition:leave-start="opacity-100 translate-y-10"
+              x-transition:leave-end="opacity-0 translate-y-0" class="w-10/12 bg-white p-4 flex flex-wrap rounded-2xl">
+          
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-b-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-etc.png" alt="Ethereum Classic">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Ethereum Classic</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765 ETH</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-ada.png" alt="Cardano">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Cardano</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765 ETH</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-advceur.png" alt="Advanced Cash EUR">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Advanced Cash EUR</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765 ETH</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-advcuah.png" alt="Advanced Cash UAH">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Advanced Cash UAH</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765 ETH</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-advcusd.png" alt="Advanced Cash USD">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Advanced Cash USD</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765 ETH</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-balance.png" alt="Balance USD">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Balance USD</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765 ETH</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-bch.png" alt="Bitcoin Cash">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Bitcoin Cash</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765 ETH</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-bnb.png" alt="Binance Coin">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Binance Coin</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765 ETH</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-btc.png" alt="Bitcoin">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Bitcoin</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765 ETH</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-cardeur.png" alt="Visa/MasterCard EUR">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Visa/MasterCard EUR</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-cardusd.png" alt="Visa/MasterCard USD">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Visa/MasterCard USD</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-dash.png" alt="Dash">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Dash</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765 ETH</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-etc.png" alt="Ethereum Classic">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Ethereum Classic</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765 ETH</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-etc.png" alt="Ether">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Ether</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765 ETH</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-ltc.png" alt="Litecoin">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Litecoin</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765 ETH</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-monobuah.png" alt="Monobank UAH">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Monobank UAH</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765 </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-ntlreur.png" alt="Neteller EUR">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Neteller EUR</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-ntlrusd.png" alt="Neteller USD">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Neteller USD</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-pmeur.png" alt="Perfect Money EUR">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Perfect Money EUR</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765 </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-pmusd.png" alt="Perfect Money USD">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Perfect Money USD</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765 </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-ppeur.png" alt="PayPal EUR">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">PayPal EUR</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-preur.png" alt="Payeer EUR">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Payeer EUR</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-prusd.png" alt="Payeer USD">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Payeer USD</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-revbeur.png" alt="Revolut EUR">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Revolut EUR</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-revbusd.png" alt="Revolut USD">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Revolut USD</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-sepaeur.png" alt="SEPA">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">SEPA</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765 </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-skleur.png" alt="Skrill EUR">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Skrill EUR</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-sklusd.png" alt="Skrill USD">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Skrill USD</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 lg:w-1/5  aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+            <div class="flex gap-4 items-center">
+              <img class="w-9 h-9" src="https://standartbit.com/site-default/icon-trx.png" alt="TRON">
+              <div class="flex flex-col  gap-1">
+                <h6 class="text-lg font-medium text-gray-700 dark:text-white">TRON</h6>
+                <p class=" text-sm font-bold text-gray-400 dark:text-gray-300">65.998765</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+<!-- reserves section END -->
+
+<!-- partner section -->
+
+      <div class="mt-12 space-y-4 px-6 md:px-0">
+        <h2 class="text-center text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
+          Our partners
+        </h2>
+      </div>
+
+
+
+<div class=" flex justify-center mt-12 ">
+      <div class=" w-10/12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6">
+        <div class="p-4  grayscale transition duration-200 hover:grayscale-0">
+          <img src="./img/01.svg" class="h-12 object-scale-down w-auto mx-auto" loading="lazy" alt="client logo"
+            width="" height="" />
+        </div>
+        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+          <img src="./img/02.png" class="h-12 object-scale-down w-auto mx-auto" loading="lazy" alt="client logo" width=""
+            height="" />
+        </div>
+        <div class="p-4  grayscale transition duration-200 hover:grayscale-0">
+          <img src="./img/03.png" class="h-12 object-scale-down w-auto m-auto" loading="lazy" alt="client logo" width=""
+            height="" />
+        </div>
+        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+          <img src="./img/04.png" class="h-12 object-scale-down w-auto mx-auto" loading="lazy" alt="client logo" width=""
+            height="" />
+        </div>
+        <div class="p-4  grayscale transition duration-200 hover:grayscale-0">
+          <img src="./img/05.png" class="h-12 object-scale-down w-auto m-auto" loading="lazy" alt="client logo" width=""
+            height="" />
+        </div>
+        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+          <img src="./img/06.png" class="h-12 object-scale-down w-auto mx-auto" loading="lazy" alt="client logo"
+            width="" height="" />
+        </div>
+      </div>
+      
+</div>
+<!-- partner section END-->
+
+<!-- footer secton -->
+
+<footer class="bg-gradient-to-br from-cyan-500 to-blue-500 border mt-24">
+  <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+      <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+          <div class="px-5 py-2">
+              <a href="#" class="text-base leading-6 text-white hover:text-gray-900">
+                Affiliate
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="#" class="text-base leading-6 text-white hover:text-gray-900">
+                AML & KYC
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="#" class="text-base leading-6 text-white hover:text-gray-900">
+                Privacy Policy
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="#" class="text-base leading-6 text-white hover:text-gray-900">
+                FAQ
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="#" class="text-base leading-6 text-white hover:text-gray-900">
+                  Contact
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="#" class="text-base leading-6 text-white hover:text-gray-900">
+                  Terms
+              </a>
+          </div>
+      </nav>
+      <div class="flex justify-center mt-8 space-x-6">
+          <a href="#" class="text-white hover:text-white">
+              <span class="sr-only">Facebook</span>
+              <svg class="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+              </svg>
+          </a>
+          <a href="#" class="text-white hover:text-white">
+              <span class="sr-only">Instagram</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evdenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+              </svg>
+              
+          </a>
+          
+          <a href="#" class="text-white hover:text-white">
+              <span class="sr-only">Telegram</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"  fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+              </svg>
+          </a>
+          
+      </div>
+      <p class="mt-8 text-base leading-6 text-center text-white">
+          © 2023 StandartBit Exchange. All rights reserved.
+      </p>
+  </div>
+</footer>
+
+<!-- footer secton END -->
+
+
+<script src="script.js"></script>
+<script src="//unpkg.com/alpinejs" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</body>
+
+</html>
